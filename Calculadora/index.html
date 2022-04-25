@@ -1,0 +1,163 @@
+<html>
+  <head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Container Calculadora-->
+    <div class="calculadora_container">
+      <!--Modelo Calculadora-->
+      <div class="calculadora_model">
+        <!--Display Calculadora-->
+        <div class="calculadora_input_display">
+          <textarea
+            cols="40"
+            rows="7"
+            id="calculadora_input_Numero_Previews"
+          ></textarea>
+          <input type="text" id="calculadora_input_Numero" placeholder="0" />
+        </div>
+
+        <!--Botões Calculadora-->
+        <div class="calculadora_butoes">
+          <!--Botões à esquerda-->
+          <div class="calculadora_butao_left3">
+            <!--Botões brancos-->
+            <div class="calculadora_butao_left3_Top">
+              <div
+                class="calculadora_butao_FixedSize_Top"
+                id="Calculadora_input_AC"
+              >
+                C
+              </div>
+              <div
+                class="calculadora_butao_FixedSize_Top2"
+                onclick="backspace()"
+              >
+                ←
+              </div>
+              <!-- <div
+                class="calculadora_butao_FixedSize_Top"
+                onclick="display('%')"
+              >
+                %
+              </div> -->
+            </div>
+            <!--Botões centrais brancos-->
+            <div class="calculadora_butao_left_Number">
+              <div
+                class="calculadora_butao_Fixedsize_Number"
+                onclick="display('7')"
+              >
+                7
+              </div>
+              <div
+                class="calculadora_butao_Fixedsize_Number"
+                onclick="display('8')"
+              >
+                8
+              </div>
+              <div
+                class="calculadora_butao_Fixedsize_Number"
+                onclick="display('9')"
+              >
+                9
+              </div>
+
+              <div
+                class="calculadora_butao_Fixedsize_Number"
+                onclick="display('4')"
+              >
+                4
+              </div>
+              <div
+                class="calculadora_butao_Fixedsize_Number"
+                onclick="display('5')"
+              >
+                5
+              </div>
+              <div
+                class="calculadora_butao_Fixedsize_Number"
+                onclick="display('6')"
+              >
+                6
+              </div>
+
+              <div
+                class="calculadora_butao_Fixedsize_Number"
+                onclick="display('1')"
+              >
+                1
+              </div>
+              <div
+                class="calculadora_butao_Fixedsize_Number"
+                onclick="display('2')"
+              >
+                2
+              </div>
+              <div
+                class="calculadora_butao_Fixedsize_Number"
+                onclick="display('3')"
+              >
+                3
+              </div>
+            </div>
+            <!--Botões 0 e .-->
+            <div class="calculadora_butao_left3_bottom">
+              <div
+                class="calculadora_butao_FixedSize_bottom"
+                id="calculadora_butao_FixedSize_bottom_zero"
+                onclick="avoid0s()"
+              >
+                0
+              </div>
+              <div
+                class="calculadora_butao_FixedSize_bottom"
+                onclick="display('.')"
+              >
+                .
+              </div>
+            </div>
+          </div>
+
+          <!--Botões à direita laranja-->
+          <div class="calculadora_butao_Right">
+            <div
+              class="calculadora_butao_FixedSize_Orange"
+              onclick="display('/')"
+            >
+              ÷
+            </div>
+            <div
+              class="calculadora_butao_FixedSize_Orange"
+              onclick="display('*')"
+            >
+              ×
+            </div>
+            <div
+              class="calculadora_butao_FixedSize_Orange"
+              onclick="display('-')"
+            >
+              -
+            </div>
+            <div
+              class="calculadora_butao_FixedSize_Orange"
+              onclick="display('+')"
+            >
+              +
+            </div>
+            <!--Sinal de igual-->
+            <div
+              class="calculadora_butao_FixedSize_Orange"
+              onclick="displaySolve()"
+            >
+              =
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="Calculadora.js"></script>
+  </body>
+</html>
